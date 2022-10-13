@@ -232,24 +232,35 @@ main div > div{
     width: 50px;
     } */
 
-    @media(max-width:700px){
-        main{
-            grid-template-columns:1fr;
-        }
+    @media(max-width:1600px){
+       
 
         li span, h2 span{
             display: none;
             
         }
 
-        aside{
+        /* aside{
             width:80px;
             overflow: hidden;
+        } */
+        .container{
+            grid-template-columns: 80px auto;
+        }
+
+        h2{
+            /* text-align: center; */
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        
         }
      
     }
 
-    @media(max-width:1000px){
+    @media(max-width:700px){
        
-      
+        main{
+            grid-template-columns:1fr;
+        }
     }
