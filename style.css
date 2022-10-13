@@ -11,7 +11,7 @@
     display:grid;
     grid-template-columns:1fr 6fr;
     grid-template-rows:1fr 4.5fr;
-    background-color:skyblue;
+    /* background-color:skyblue; */
     height:100vh;
     /* border:5px solid rgb(224, 24, 107); */
 
@@ -36,6 +36,9 @@ aside{
     /* display:block; */
 }
 
+aside h2{
+    text-align: center;
+}
 
 aside ul{
     display:grid;
@@ -63,7 +66,7 @@ aside li:hover{
 }
 
 i{
-    margin-right:10px;
+    margin-right:25px;
 }
 
 aside > *{
@@ -72,7 +75,10 @@ aside > *{
 
 main{
     display:grid;
-    grid-template-columns:8fr 2fr;
+    grid-template-columns:4fr 1fr;
+    /* grid-template-columns:repeat(2,minmax(1240px,2fr)); */
+     /* grid-template-columns:repeat(minmax(1240px,1fr),auto-fit); */
+     /* grid-template-columns:repeat(auto-fit,minmax(600px, 1fr))!important; */
     grid-template-rows:repeat(3,1fr);
     overflow-y: scroll;
     gap:20px;
@@ -114,7 +120,10 @@ header{
     gap:5px;
     background-color: #95adbe;
     color: white;
+}
 
+header p, header span{
+    font-weight: 500;
 }
 
 header >*{
@@ -222,3 +231,25 @@ main div > div{
     background-color: orange;
     width: 50px;
     } */
+
+    @media(max-width:700px){
+        main{
+            grid-template-columns:1fr;
+        }
+
+        li span, h2 span{
+            display: none;
+            
+        }
+
+        aside{
+            width:80px;
+            overflow: hidden;
+        }
+     
+    }
+
+    @media(max-width:1000px){
+       
+      
+    }
