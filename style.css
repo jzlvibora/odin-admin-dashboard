@@ -31,8 +31,11 @@ aside{
     row-gap:50px;
     background-color: #3c2a4d;
     color:whitesmoke;
+    padding-top:25px!important
+    
     /* display:block; */
 }
+
 
 aside ul{
     display:grid;
@@ -44,7 +47,6 @@ aside ul{
 
 aside li{
     list-style: none;
-    /* line-height: 45px; */
     padding-left:20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -76,6 +78,7 @@ main{
     gap:20px;
     background-color: #e2e8f0;
     padding:30px !important;
+    
 }
 
 .projects{
@@ -140,6 +143,11 @@ header input[type=search]{
     background-color: #e2e8f0;;
 }
 
+
+header input[type=search]:focus{
+    outline:none;
+}
+
 .account{
     display:flex;
     justify-content: flex-end;
@@ -179,15 +187,15 @@ header input[type=search]{
     align-items: center;
 }
 .menu button{
-    border-radius: 25px;
+    border-radius: 150px;
     padding-right:12px;
     padding-left:12px;
-    padding-top: 8px;
-    padding-bottom:8px;
+    padding-top: 6px;
+    padding-bottom:6px;
     background-color: #503a65;
     border: none;
     color:white;
-    height: 40px;
+    /* height: 40px; */
 }
 
 
