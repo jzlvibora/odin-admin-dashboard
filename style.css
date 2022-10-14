@@ -12,7 +12,7 @@
     grid-template-columns:1fr 6fr;
     grid-template-rows:1fr 4.5fr;
     /* background-color:skyblue; */
-    height:100vh;
+    max-height:100vh;
     /* border:5px solid rgb(224, 24, 107); */
 
 }
@@ -213,12 +213,24 @@ header input[type=search]:focus{
 .card{
     background-color: white;
     padding:30px;
+    box-shadow:
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.025)
+
+  ;
+  
+
 
 }
 
 .projects .card{
     border-left: 10px solid #574f7d;
-    /* height:min-content; */
+    display:flex;
+    flex-direction: column;
+}
+
+.projects .action{
+    align-self: flex-end;
 }
 
 main div > div{
